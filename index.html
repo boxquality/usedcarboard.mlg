@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <title>USED CARBOARD | Jual Beli & Pengiriman Kardus</title>
+  <style>
+    :root{--bg:#0d0d0f;--panel:#17171a;--panel2:#202024;--red:#e32636;--muted:#a7a7ad;--line:#303036;--white:#f5f5f6}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:10;background:#101012ee;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-weight:900;letter-spacing:1px;font-size:20px}.brand span{color:var(--red)}
+    nav{display:flex;gap:22px;color:#ddd;font-size:14px}nav a:hover{color:var(--red)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;background:var(--red);color:white;padding:13px 19px;border:0;border-radius:5px;font-weight:800;cursor:pointer}
+    .btn:hover{filter:brightness(1.12)}.btn.ghost{background:transparent;border:1px solid #555}
+    .hero{padding:76px 0 68px;background:radial-gradient(ellipse at 85% 25%,#5b111b 0,transparent 42%),linear-gradient(120deg,#151517,#0d0d0f 70%)}
+    .eyebrow{color:#ff5966;text-transform:uppercase;letter-spacing:3px;font-size:12px;font-weight:800}
+    h1{font-size:clamp(42px,8vw,82px);line-height:.98;letter-spacing:-2px;margin:18px 0}.red{color:var(--red)}
+    .lead{max-width:620px;color:#c1c1c7;font-size:17px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:45px;max-width:700px}.stat{padding:17px;background:#ffffff09;border:1px solid #ffffff18;border-radius:8px}.stat b{display:block;font-size:19px}.stat small{color:var(--muted)}
+    section{padding:66px 0}.section-head{margin-bottom:28px}.section-head h2{font-size:clamp(27px,4vw,39px);margin:8px 0}.section-head p{color:var(--muted);margin:0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:23px}.card .num{color:var(--red);font-weight:900;font-size:13px}.card h3{margin:9px 0}.card p{color:var(--muted);margin:0}
+    .product{min-height:180px;display:flex;flex-direction:column;justify-content:space-between}.product .symbol{font-size:30px}
+    .order-layout,.contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}
+    form{display:grid;gap:12px}.field label{display:block;font-size:13px;color:#ddd;margin-bottom:6px}.field input,.field select,.field textarea{width:100%;padding:13px;background:#101013;color:white;border:1px solid #3a3a42;border-radius:5px;font:inherit}
+    .field textarea{min-height:90px;resize:vertical}.hint{font-size:12px;color:var(--muted)}
+    .contact-list{display:grid;gap:12px}.contact-item{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:17px}.contact-item small{color:var(--muted);display:block}.contact-item b{overflow-wrap:anywhere}
+    .map-wrap{height:330px;border:1px solid var(--line);border-radius:9px;overflow:hidden;background:var(--panel)}iframe{width:100%;height:100%;border:0}
+    footer{border-top:1px solid var(--line);padding:27px 0;color:var(--muted);font-size:13px}.foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    .notice{padding:13px 15px;border:1px solid #6d343a;background:#32151a;border-radius:7px;color:#ffd9dd;font-size:13px}
+    @media(max-width:760px){nav{display:none}.grid{grid-template-columns:1fr}.order-layout,.contact-layout{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.hero{padding:58px 0}.nav{height:64px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#">USED<span>CARBOARD</span></a>
+    <nav><a href="#layanan">Layanan</a><a href="#produk">Produk</a><a href="#pesan">Pesan</a><a href="#lokasi">Lokasi</a></nav>
+    <a class="btn" id="topWa" href="#">Hubungi Kami</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Cardboard Trading & Delivery</div>
+      <h1>BUY. SELL.<br><span class="red">DELIVER.</span></h1>
+      <p class="lead">USED CARBOARD melayani jual beli kardus dan kebutuhan pengiriman kardus. Hubungi kami untuk konsultasi, penawaran, dan pemesanan.</p>
+      <div class="hero-actions"><a class="btn" href="#pesan">Buat Pesanan</a><a class="btn ghost" id="heroWa" href="#">Chat WhatsApp</a></div>
+      <div class="stats">
+        <div class="stat"><b>Jual Beli</b><small>Kardus sesuai kebutuhan</small></div>
+        <div class="stat"><b>Pengiriman</b><small>Koordinasi lokasi & jadwal</small></div>
+        <div class="stat"><b>Respon Langsung</b><small>Pesanan diteruskan ke WhatsApp</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="layanan">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">What We Do</div><h2>Layanan <span class="red">Kami</span></h2><p>Hubungi tim USED CARBOARD untuk detail stok, kondisi, dan penawaran harga.</p></div>
+      <div class="grid">
+        <article class="card"><div class="num">01 / SELL</div><h3>Jual Kardus</h3><p>Mencari kardus untuk kebutuhan usaha, penyimpanan, atau pengemasan.</p></article>
+        <article class="card"><div class="num">02 / BUY</div><h3>Beli Kardus Bekas</h3><p>Ingin menjual kardus bekas? Kirim detail jenis, kondisi, jumlah, dan lokasi.</p></article>
+        <article class="card"><div class="num">03 / DELIVERY</div><h3>Pengiriman Kardus</h3><p>Koordinasikan alamat tujuan, jumlah barang, dan jadwal pengiriman.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="produk" style="background:#121214">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">Product Information</div><h2>Kategori <span class="red">Kardus</span></h2><p>Contoh kategori. Ketersediaan dan harga dikonfirmasi melalui WhatsApp.</p></div>
+      <div class="grid">
+        <article class="card product"><div class="symbol">▤</div><div><h3>Kardus Bekas</h3><p>Berbagai ukuran dan kondisi sesuai stok.</p></div></article>
+        <article class="card product"><div class="symbol">▦</div><div><h3>Kardus Packing</h3><p>Untuk pengemasan dan kebutuhan pengiriman.</p></div></article>
+        <article class="card product"><div class="symbol">▧</div><div><h3>Partai / Grosir</h3><p>Diskusikan kebutuhan jumlah besar dan pengiriman.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="pesan">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">Online Order</div><h2>Formulir <span class="red">Pesanan</span></h2><p>Isi formulir, lalu pesan akan disiapkan di WhatsApp bisnis.</p></div>
+      <div class="order-layout">
+        <div class="card">
+          <form id="orderForm">
+            <div class="field"><label for="custName">Nama</label><input id="custName" required placeholder="Nama Anda"></div>
+            <div class="field"><label for="service">Jenis kebutuhan</label><select id="service"><option>Ingin membeli kardus</option><option>Ingin menjual kardus bekas</option><option>Memerlukan pengiriman kardus</option><option>Konsultasi / penawaran</option></select></div>
+            <div class="field"><label for="detail">Jenis / jumlah kardus</label><input id="detail" required placeholder="Contoh: kardus bekas, 100 kg"></div>
+            <div class="field"><label for="location">Alamat / lokasi</label><textarea id="location" required placeholder="Tulis kecamatan, kota, dan alamat"></textarea></div>
+            <div class="field"><label for="extra">Catatan tambahan</label><textarea id="extra" placeholder="Ukuran, kondisi, jadwal, dll. (opsional)"></textarea></div>
+            <button class="btn" type="submit">Kirim Pesanan via WhatsApp</button>
+            <div class="hint">Pesanan belum tersimpan di database. Tombol ini membuka WhatsApp agar Anda mengirim pesan secara langsung.</div>
+          </form>
+        </div>
+        <aside class="card">
+          <div class="eyebrow">Need Assistance?</div><h3>Butuh penawaran cepat?</h3>
+          <p style="color:var(--muted)">Hubungi kami dan sertakan foto kardus, perkiraan jumlah, serta lokasi agar proses pengecekan lebih mudah.</p>
+          <br><a class="btn" id="sideWa" href="#">Chat WhatsApp</a>
+          <p class="hint" style="margin-top:18px">Ganti nomor WhatsApp pada pengaturan website sebelum dipublikasikan.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="lokasi" style="background:#121214">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">Find Us</div><h2>Kontak & <span class="red">Lokasi</span></h2><p>Hubungi USED CARBOARD untuk pertanyaan, pemesanan, dan koordinasi pengiriman.</p></div>
+      <div class="contact-layout">
+        <div class="contact-list">
+          <div class="contact-item"><small>WHATSAPP / NOMOR TELEPON</small><b id="phoneText">Nomor belum diatur</b></div>
+          <div class="contact-item"><small>ALAMAT USAHA</small><b id="addressText">Alamat usaha belum diatur</b></div>
+          <div class="contact-item"><small>JAM OPERASIONAL</small><b id="hoursText">Silakan hubungi kami untuk jam layanan</b></div>
+          <div class="notice">Lokasi peta dan nomor telepon perlu diisi dengan data usaha yang benar sebelum website dibagikan ke pelanggan.</div>
+        </div>
+        <div class="map-wrap"><iframe id="mapFrame" title="Peta lokasi USED CARBOARD" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap foot"><b>USED CARBOARD</b><span>© 2026 USED CARBOARD. All rights reserved.</span><span>Cardboard Trading & Delivery</span></div></footer>
+
+<script>
+  // ===== PENGATURAN BISNIS: UBAH BAGIAN INI =====
+  const BUSINESS = {
+    whatsapp: "628XXXXXXXXXX", // Ganti dengan nomor WA, contoh 6281234567890
+    phoneDisplay: "08xxxxxxxxxx", // Nomor yang tampil di website
+    address: "ISI ALAMAT USAHA, KOTA, PROVINSI",
+    mapQuery: "ISI ALAMAT USAHA, KOTA, PROVINSI", // Harus sama dengan alamat usaha
+    hours: "Senin - Sabtu, 08.00 - 17.00 WIB"
+  };
+  // ==============================================
+
+  const waLink = "https://wa.me/" + BUSINESS.whatsapp;
+  ["topWa","heroWa","sideWa"].forEach(id => document.getElementById(id).href = waLink);
+  document.getElementById("phoneText").textContent = BUSINESS.phoneDisplay;
+  document.getElementById("addressText").textContent = BUSINESS.address;
+  document.getElementById("hoursText").textContent = BUSINESS.hours;
+  document.getElementById("mapFrame").src =
+    "https://www.google.com/maps?q=" + encodeURIComponent(BUSINESS.mapQuery) + "&output=embed";
+
+  document.getElementById("orderForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    if (BUSINESS.whatsapp.includes("X")) {
+      alert("Nomor WhatsApp bisnis belum diatur. Edit bagian BUSINESS di script website terlebih dahulu.");
+      return;
+    }
+    const name = document.getElementById("custName").value.trim();
+    const service = document.getElementById("service").value;
+    const detail = document.getElementById("detail").value.trim();
+    const location = document.getElementById("location").value.trim();
+    const extra = document.getElementById("extra").value.trim();
+    const message = `HALO USED CARBOARD, SAYA INGIN MELAKUKAN PESANAN.\n\nNama: ${name}\nKebutuhan: ${service}\nJenis/Jumlah: ${detail}\nAlamat: ${location}\nCatatan: ${extra || "-"}`;
+    window.open("https://wa.me/" + BUSINESS.whatsapp + "?text=" + encodeURIComponent(message), "_blank");
+  });
+</script>
+</body>
+</html>
